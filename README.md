@@ -8,8 +8,8 @@
 
 # Grupo
 
-- Estudiante 1 (Legajo 1) - cor...@estudiante1.com
-- Estudiante 2 (Legajo 2) - cor...@estudiante2.com
+- Talucci Tomás (188025) - tom@estudiante1.com
+- Tamburri Nahuel (165046) - tam@estudiante2.com
 
 # Contexto / Escenario
 
