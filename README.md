@@ -8,8 +8,8 @@
 
 # Grupo
 
-- Talucci Tomás (188025) - tom@estudiante1.com
-- Tamburri Nahuel (165046) - tam@estudiante2.com
+- Talucci Tomás (188025) - tom@estudiante1.com - Centro Regional Chivilcoy
+- Tamburri Nahuel (165046) - tam@estudiante2.com - Centro Regional Chivilcoy
 
 # Contexto / Escenario
 
