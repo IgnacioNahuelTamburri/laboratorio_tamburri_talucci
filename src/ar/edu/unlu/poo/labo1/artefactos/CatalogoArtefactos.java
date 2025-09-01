@@ -8,7 +8,7 @@ public class CatalogoArtefactos {
     //METODOS
     public void agregarArtefacto(Artefacto artefacto) {
         inventario.add(artefacto);
-        System.out.printf("Artefacto: %s agregado al inventario con éxito.\n", artefacto.getNombre().toUpperCase(Locale.ROOT));
+        //System.out.printf("Artefacto: %s agregado al inventario con éxito.\n", artefacto.getNombre().toUpperCase(Locale.ROOT));
     }
 
     public Set obtenerArtefactosUnicos() {
@@ -19,9 +19,6 @@ public class CatalogoArtefactos {
         //Devuelve una lista de artefactos que coincidan con el tipo especificado.
         //La lista debe estar ordenada de mayor a menor poder.
         List<Artefacto> artefactosCoincidentes = new ArrayList<>();
-        if (tipo == null) { //Preguntar sobre esta validacion
-            return artefactosCoincidentes;
-        }
         for (Artefacto artefacto : inventario) {
             String tipoBuscado = artefacto.getTipo();
             if (tipoBuscado.equals(tipo)) {
@@ -44,12 +41,10 @@ public class CatalogoArtefactos {
 
         for (Artefacto artefacto : inventario) {
             String tipo = artefacto.getTipo();
-            int conteoActual = cantArtefactosPorTipo.get(tipo); //en la primer vuelta almacena null
-            cantArtefactosPorTipo.put(tipo, conteoActual + 1);
-
-            //cantArtefactosPorTipo.put(tipo, (cantArtefactosPorTipo.getOrDefault(tipo, 0)) + 1);
+            //int conteoActual = cantArtefactosPorTipo.get(tipo); //en la primer vuelta almacena null
+            //cantArtefactosPorTipo.put(tipo, conteoActual + 1);
+            cantArtefactosPorTipo.put(tipo, (cantArtefactosPorTipo.getOrDefault(tipo, 0)) + 1);
             //getOrDefault(tipo, defaultValue) va a devolver el valor actual si es que existe o 0 si todavia no estaba en el Map.
-
         }
         return cantArtefactosPorTipo;
     }
