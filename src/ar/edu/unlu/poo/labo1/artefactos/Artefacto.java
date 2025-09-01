@@ -4,8 +4,8 @@ import java.util.Objects;
 
 public class Artefacto {
     private String nombre;
-    private int poder;
-    private String tipo;
+    private int poder; //VALIDAR QUE ESTE ENTRE 1 Y 100
+    private String tipo; //POCION-PERGAMINO-AMULETO-VARITA
 
     public Artefacto (String nombre, int poder, String tipo){
         this.nombre = nombre;
